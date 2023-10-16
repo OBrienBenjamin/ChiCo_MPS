@@ -64,6 +64,6 @@ end
 
 TABLE = table(Part', Role', Laugh', Amp', Rate', ...
     'VariableNames', {'Participant', 'Role', 'Laugh', 'Amp', 'Time'});
-writetable(TABLE, ['/Users/benjiobrien/Desktop/ChiCo_', rv,'_Exclude_500ms_DC_PLUS.csv']);
+writetable(TABLE, ['/Users/benjiobrien/Desktop/ChiCo_', rv,'.csv']);
 
 end
