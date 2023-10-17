@@ -30,5 +30,5 @@ ExportChiCo(Laugh, 'SM_Pos');
 % % extract temporal / spectraol modulation amplitudes per interlocuteur type
 A = {'Child', 'Child', 'PwC', 'PwA', 'Adult'}; B = {'TM_Pos', 'SM_Pos', 'SM_Pos', 'SM_Pos', 'SM_Pos'};
 for i = 1:length(A)
-    ExportAfterGAMM(Laugh, A{i}, B{i})
+    ExportMPSRangePerInterlocuteur(Laugh, A{i}, B{i})
 end
