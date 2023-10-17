@@ -1,11 +1,11 @@
-% % % % IA - Load data and extract MPS
+% % % % (i) Load data and extract MPS
 % % % % path/to/data
 home = '/path/to/corpus/';
 
 % % % % % extract TextGrids
 [Laugh] = LoadTextGrid(home);
 
-% % % % identify Adults, Parents, Child
+% % % % (ii) identify Adults, Parents, Child
 [Laugh] = IdRoles(Laugh);
 
 % % % % re-label laughs as antiphonal
@@ -14,7 +14,7 @@ home = '/path/to/corpus/';
 % % % save each laugh .wav
 % % ExtractRecordings(Laugh, home);
 
-% % % % calcul mps
+% % % % (iii-iv) remove DC offset, normalize, calcul mps
 [Laugh] = CalcMPSFeatures(Laugh, home);
 
 fprintf('saving . . .\n');
@@ -27,7 +27,7 @@ save([home, 'ChiCo_MPS.mat'], 'Laugh')
 ExportChiCo(Laugh, 'TM_Pos');
 ExportChiCo(Laugh, 'SM_Pos');
 
-% % % % IB Calculate Euclidean distances for each Interlocuteur
+% % % % (v) Calculate Euclidean distances for each Interlocuteur
 % % % % Child mimicking Adult
 INFO.DYAD = 'AA'; % % % AA (Parent-Adult) or CA (Child-Adult)
 INFO.WHICH = 'Adult'; % % % who's mimicking? ('Adult', 'Parent', 'Child')
@@ -52,7 +52,7 @@ P = table(G_TM', G_SM', P_TM', P_SM', ...
     'VariableNames', {'G_TM', 'G_SM', 'P_TM', 'P_SM'});
 writetable(P, ['/Users/benjiobrien/Desktop/', INFO.DYAD, '_', INFO.WHICH, '.csv']);
 
-% % % % % Export MPS amplitudes from temporal / spectral modulation per interlocuteur type
+% % % % % (vi) Export MPS amplitudes from temporal / spectral modulation per interlocuteur type
 % % based on these significant differences identified by GAMMs
 A = {'Child', 'Child', 'PwC', 'PwA', 'Adult'}; B = {'TM_Pos', 'SM_Pos', 'SM_Pos', 'SM_Pos', 'SM_Pos'};
 for i = 1:length(A)
