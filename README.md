@@ -5,6 +5,6 @@
 
 Please see the following for papers that used this toolkit:
 
-Chiara Mazzocconi, Benjamin O’Brien, Kevin El Haddad, Kübra Bodur, Abdellah Fourtassi. Differences between Mimicking and Non-Mimicking laughter in Child-Caregiver Conversation: A Distributional and Acoustic Analysis. Proceedings of the 45th Annual Conference of the Cognitive Science Society., Aug 2023, Sidney, Australia. [https://hal.science/hal-04415454]
+Chiara Mazzocconi, Benjamin O’Brien, Kevin El Haddad, Kübra Bodur, Abdellah Fourtassi. Differences between Mimicking and Non-Mimicking laughter in Child-Caregiver Conversation: A Distributional and Acoustic Analysis. Proceedings of the 45th Annual Conference of the Cognitive Science Society., Aug 2023, Sydney, Australia. [https://hal.science/hal-04415454]
 
 Chiara Mazzocconi, Benjamin O’Brien, Kübra Bodur et al. Do children laugh like their parents? Conversational laughter mimicry occurrence and acoustic alignment in middle-childhood, 01 July 2024, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-4570818/v1]
